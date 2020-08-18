@@ -1,0 +1,24 @@
+icon-filename: icon.png
+icon-position-x: 0
+icon-position-y: 0
+icon-dimension-x: 50
+icon-dimension-y: 50
+
+module-color: 737373
+
+description: Hard Disk information
+description-position-x: 60
+description-position-y: 18
+
+start-drawing-offset: 60
+horizontal-spacing: 15
+
+partitions-list:
+  - '/dev/sda1'
+  - '/dev/sda3'
+  - '/dev/sdb1'
+
+table-header: 'Filesystem   Type    Size      Used      Free    Used(%)   mount-point'
+
+# time to refresh the component (seconds)
+refresh-time: 10

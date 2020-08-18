@@ -1,0 +1,27 @@
+icon-filename: icon.png
+icon-position-x: 0
+icon-position-y: 0
+icon-dimension-x: 50
+icon-dimension-y: 50
+
+module-color: 737373
+
+description: Memory information (RAM)
+description-position-x: 60
+description-position-y: 18
+
+start-drawing-offset: 60
+horizontal-spacing: 15
+
+labels-mapping:
+  total: 'Total Memory (Gb):  '
+  free: 'Free (Gb):  '
+  used: 'Used (Gb):  '
+  cached: 'Cached (Gb):  '
+  swap-total: 'Total swap (Gb):  '
+  swap-free: 'Total swap free (Gb):  '
+  swap-used: 'Total swap used (Gb):  '
+
+
+# time to refresh the component (seconds)
+refresh-time: 5
