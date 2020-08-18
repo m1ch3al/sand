@@ -1,8 +1,8 @@
-widget-width: 380
-widget-height: 800
+widget-width: 400
+widget-height: 900
 
-widget-position-x: 1500
-widget-position-y: 100
+widget-position-x: 1400
+widget-position-y: 70
 
 sand-modules-to-load:
   - module:
@@ -15,11 +15,16 @@ sand-modules-to-load:
       module-name: sand.modules.memory.gui
       class-name: SandMemoryGui
       position-x: 0
-      position-y: 180
+      position-y: 200
 
   - module:
       module-name: sand.modules.hard_drives.gui
       class-name: SandHardDrivesGui
       position-x: 0
-      position-y: 370
+      position-y: 390
 
+  - module:
+      module-name: sand.modules.network.gui
+      class-name: SandNetworkGui
+      position-x: 0
+      position-y: 550

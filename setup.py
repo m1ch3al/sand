@@ -32,6 +32,7 @@ setup(
         'sand.modules.cpu': ['*/*.yaml', '*.yaml', '*/*.png', '*.png'],
         'sand.modules.memory': ['*/*.yaml', '*.yaml', '*/*.png', '*.png'],
         'sand.modules.hard_drives': ['*/*.yaml', '*.yaml', '*/*.png', '*.png'],
+        'sand.modules.network': ['*/*.yaml', '*.yaml', '*/*.png', '*.png'],
     },
     package_dir={'': 'src'},
     zip_safe=False,
@@ -45,6 +46,7 @@ setup(
         'sand.modules.cpu',
         'sand.modules.memory',
         'sand.modules.hard_drives',
+        'sand.modules.network',
     ]
 )
 

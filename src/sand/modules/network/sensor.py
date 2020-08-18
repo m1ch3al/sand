@@ -1,4 +1,4 @@
-from sand.modules.sensor_module import HardwareSensorModule
+from sand.sensor_module import HardwareSensorModule
 import subprocess
 
 
@@ -40,7 +40,7 @@ class NetworkDevices(HardwareSensorModule):
                 return splitted[i+1]
 
 
-class NetworkDeviceIO(NetworkDevices):
+class NetworkDeviceIO(HardwareSensorModule):
     def __init__(self, devices):
         HardwareSensorModule.__init__(self)
         self._process = None

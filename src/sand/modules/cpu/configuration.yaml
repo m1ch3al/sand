@@ -1,16 +1,16 @@
 icon-filename: icon.png
 icon-position-x: 0
 icon-position-y: 0
-icon-dimension-x: 50
-icon-dimension-y: 50
+icon-dimension-x: 70
+icon-dimension-y: 70
 
-module-color: 737373
+module-color: '000000'
 
 description: CPU and Core(s) Information
-description-position-x: 60
-description-position-y: 18
+description-position-x: 80
+description-position-y: 24
 
-start-drawing-offset: 60
+start-drawing-offset: 75
 horizontal-spacing: 15
 
 # time to refresh the component (seconds)
