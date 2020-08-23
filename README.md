@@ -3,7 +3,8 @@
 ![](https://img.shields.io/github/repo-size/TheAlgorithms/Python.svg?label=Repo%20size&style=flat-square)&nbsp;
 [![Tested on Python 3.6](https://img.shields.io/badge/Tested%20-Python%203.6-blue.svg?logo=python&style=flat-square)]( https://www.python.org/downloads)
 
-## SAND - A clone of Conky.
+## SAND
+#A clone of Conky written in Python.
 This is my personal system information monitor inside for my ubuntu desktop.
 Totally written in Python 3+ (teste on Python 3.6), fully configurable and customizable.
 
@@ -12,8 +13,9 @@ Totally written in Python 3+ (teste on Python 3.6), fully configurable and custo
 
 Zoomed screenshot of SAND running.
 
-### My desktop <3
+# My desktop
 ![zoom_sand](https://github.com/m1ch3al/sand/blob/master/sand_desktop.png)
+
 
 
 
