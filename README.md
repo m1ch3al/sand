@@ -7,6 +7,14 @@
 This is my personal system information monitor inside for my ubuntu desktop.
 Totally written in Python 3+ (teste on Python 3.6), fully configurable and customizable.
 
-## A screenshots of the application.
-![zoom_sand](http://lmsotfy.com/so.png) 
+## Some screenshots of the application.
+![zoom_sand](https://github.com/m1ch3al/sand/blob/master/zoom_sand.png)
+Zoomed screenshot of SAND running.
+
+### My desktop <3
+![zoom_sand](https://github.com/m1ch3al/sand/blob/master/sand_desktop.png)
+
+
+
+
 
