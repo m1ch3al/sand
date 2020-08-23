@@ -9,6 +9,7 @@ Totally written in Python 3+ (teste on Python 3.6), fully configurable and custo
 
 ## Some screenshots of the application.
 ![zoom_sand](https://github.com/m1ch3al/sand/blob/master/zoom_sand.png)
+
 Zoomed screenshot of SAND running.
 
 ### My desktop <3
