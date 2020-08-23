@@ -13,7 +13,7 @@ Totally written in Python 3+ (teste on Python 3.6), fully configurable and custo
 
 Zoomed screenshot of SAND running.
 
-# My desktop
+### My desktop
 ![zoom_sand](https://github.com/m1ch3al/sand/blob/master/sand_desktop.png)
 
 
