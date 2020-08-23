@@ -17,5 +17,19 @@ interfaces:
   ethernet: [enp3s0]
   wifi: [wlp2s0]
 
+disconnection-color: '0059ff'
+
+statistics-script: export_network_stat.sh
+
+ethernet-down-icon-filename: ethernet_down.png
+ethernet-up-icon-filename: ethernet_up.png
+wifi-down-icon-filename: wifi_down.png
+wifi-up-icon-filename: wifi_up.png
+interface-status-dimension-x: 60
+interface-status-dimension-y: 60
+
+left-padding-interface-status: 20
+
+
 # time to refresh the component (seconds)
 refresh-time: 1

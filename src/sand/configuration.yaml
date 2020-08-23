@@ -2,7 +2,7 @@ widget-width: 400
 widget-height: 900
 
 widget-position-x: 1400
-widget-position-y: 70
+widget-position-y: 120
 
 sand-modules-to-load:
   - module:

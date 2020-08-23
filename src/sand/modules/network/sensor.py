@@ -41,10 +41,11 @@ class NetworkDevices(HardwareSensorModule):
 
 
 class NetworkDeviceIO(HardwareSensorModule):
-    def __init__(self, devices):
+    def __init__(self, devices, stat_script):
         HardwareSensorModule.__init__(self)
         self._process = None
         self._devices = devices
+        self._stat_script = stat_script
         self._create_structure()
 
     def _create_structure(self):
@@ -58,16 +59,14 @@ class NetworkDeviceIO(HardwareSensorModule):
             self._devices[device_name]["transmitted_packets"] = None
 
     def run_command(self):
-        self._process = subprocess.Popen(["cat", "/proc/net/dev"], stdout=subprocess.PIPE)
-        data_from_command = self._process.communicate()[0].decode()
-        splitted = data_from_command.split("\n")
         for device_name in self._devices:
-            for line in splitted:
-                if line.startswith(device_name):
-                    splitted_data = line.split(" ")
-                    self._set_data(device_name, splitted_data)
-        self._process.stdout.close()
-        self.data = self._devices
+            self._process = subprocess.Popen([self._stat_script, device_name], stdout=subprocess.PIPE)
+            data_from_command = self._process.communicate()[0].decode()
+            self._process.stdout.close()
+            splitted = data_from_command.split("\n")
+            splitted_data = splitted[1].split(" ")
+            self._set_data(device_name, splitted_data)
+            self.data = self._devices
 
     def _set_data(self, device_name, data):
         if "disconnected" in self._devices[device_name]["status"]:
@@ -77,9 +76,9 @@ class NetworkDeviceIO(HardwareSensorModule):
             self._devices[device_name]["transmitted_packets"] = 0
         else:
             self._devices[device_name]["received_bytes"] = int(data[1])
-            self._devices[device_name]["received_packets"] = int(data[3])
-            self._devices[device_name]["transmitted_bytes"] = int(data[40])
-            self._devices[device_name]["transmitted_packets"] = int(data[42])
+            self._devices[device_name]["received_packets"] = int(data[2])
+            self._devices[device_name]["transmitted_bytes"] = int(data[9])
+            self._devices[device_name]["transmitted_packets"] = int(data[10])
 
 import time
 
